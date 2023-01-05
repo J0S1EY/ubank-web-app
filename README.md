@@ -1,7 +1,7 @@
 # UBank-web-app
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
-# Front End
+# Front End 
 UBank
 
 ## Development server
@@ -10,6 +10,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Back End
 UBankServer
+
+## Development server
 Run `nodemone index.js`
 
 ## Code scaffolding
@@ -32,7 +34,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Bank Users Data
+## Bank Users Login Details
 User Name: `TERRY MEDHURST` , Account Number: `8888100`  , pswd: `123456` 
 
 User Name: `Sheldon Quigley` , Account Number: `8888101`  , pswd: `123456` 
