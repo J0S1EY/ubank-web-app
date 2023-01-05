@@ -110,9 +110,9 @@ const fundTransfer = (request, acnoname, acno, amount, pswd, frmAcno) => { // <r
                     result.transaction.push({
                         date: cDate,
                         time: cTime,
-                        type: "debit",
+                        type: "Debit",
                         toacno: acno,
-                        remark: "account transfer",
+                        remark: "Account transfer",
                         amount: tamt
                     })
                     let crntBalance = result.balance
@@ -127,8 +127,8 @@ const fundTransfer = (request, acnoname, acno, amount, pswd, frmAcno) => { // <r
                             usrfind.transaction.push({
                                 date: cDate,
                                 time: cTime,
-                                type: "credit",
-                                remark: "credited from"+frmAcno,
+                                type: "Credit",
+                                remark: "Credited from " + frmAcno,
                                 amount: tamt
                             })
                             usrfind.save()
@@ -141,7 +141,7 @@ const fundTransfer = (request, acnoname, acno, amount, pswd, frmAcno) => { // <r
                         } else {
                             return {
                                 status: false,
-                                message: ('invalid account name or number '),
+                                message: ('Invalid account name or number '),
                                 statusCode: 404
                             }
                         }
@@ -149,15 +149,15 @@ const fundTransfer = (request, acnoname, acno, amount, pswd, frmAcno) => { // <r
                 } else {
                     return {
                         status: false,
-                        message: ('inefficient balance'),
+                        message: ('Inefficient balance'),
                         statusCode: 404
                     }
                 }
             } else {
-                console.log('transaction UNsuccessfull')
+                console.log('Transaction UNsuccessfull')
                 return {
                     status: false,
-                    message: "invalid Transaction password",
+                    message: "Invalid Transaction password",
                     statusCode: 404
                 }
             }
@@ -190,14 +190,14 @@ const creditTransfer = (request, amount, pswd, frmAcno) => { // <request> jwt to
                         time: cTime,
                         type: "Credit Card",
                         toacno: "Credit Card",
-                        remark: "credit card transfer",
+                        remark: "Credit card transfer",
                         amount: crdtamt
                     })
                     result.creditcard.push({
                         date: cDate,
                         time: cTime,
-                        type: "credited",
-                        remark: "from account",
+                        type: "Credited",
+                        remark: "From account",
                         amount: crdtamt
 
                     })
@@ -215,15 +215,15 @@ const creditTransfer = (request, amount, pswd, frmAcno) => { // <request> jwt to
                 } else {
                     return {
                         status: false,
-                        message: ('inefficient balance'),
+                        message: ('Inefficient balance'),
                         statusCode: 404
                     }
                 }
             } else {
-                console.log('transaction UNsuccessfull')
+                console.log('Transaction UNsuccessfull')
                 return {
                     status: false,
-                    message: "invalid Transaction password",
+                    message: "Invalid Transaction password",
                     statusCode: 404
                 }
             }
@@ -241,7 +241,7 @@ const getbalance = (request, acno) => {
             console.log(crntAcnobalance, crntCrdtbalance)
             return {
                 status: true,
-                message: ('balence request successfull'),
+                message: ('Balance request successfull'),
                 statusCode: 200,
                 crntAcnobalance,
                 crntCrdtbalance
