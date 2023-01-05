@@ -1,0 +1,360 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+a {
+    color: rgb(5, 0, 0);
+    text-decoration: none;
+}
+
+/*image*/
+img {
+    width: 100%;
+    height: 100%;
+}
+
+img.people {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* background */
+.icon-small i {
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+}
+
+.icon-middle i {
+    font-size: 18px;
+    position: relative;
+    top: 1px;
+}
+
+.icon-big i {
+    font-size: 30px;
+}
+
+.icon-width {
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 50%;
+    line-height: 32px;
+}
+
+
+/* background */
+.background-primer {
+    background: #425A7D;
+}
+
+.background-white {
+    background: white;
+}
+
+.background-circle {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.background-circle-slider {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+}
+
+/* color*/
+.color-primer {
+    color: #37333a;
+}
+
+.color-white {
+    color: #fff;
+}
+
+/* text */
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* float */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* font-weight */
+.font-weight-900 {
+    font-weight: 900;
+}
+
+.font-weight-800 {
+    font-weight: 800;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+/* position */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+
+/* border-radius */
+.border-radius {
+    border-radius: 25px;
+}
+
+.border-radius-top-left-right {
+    border-radius: 25px 25px 0 0;
+}
+
+.border-radius-circle {
+    border-radius: 50%;
+}
+
+.border-radius-style {
+    border-radius: 0% 0% 90% 90% / 0% 0% 66% 66%;
+}
+
+
+/* box-shadow */
+.box-shadow {
+    box-shadow: 0 12px 30px -15px rgba(0, 0, 0, 0.2);
+}
+
+/* container */
+.container {
+    padding: 0 15px !important;
+}
+
+/* overflow */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* padding */
+.padding-middle {
+    padding: 20px 0;
+}
+
+.padding-left-small {
+    padding-left: 8px;
+}
+
+.padding-right-small {
+    padding-right: 8px;
+}
+
+.padding-top-small {
+    padding-top: 8px;
+}
+
+.padding-bottom-small {
+    padding-bottom: 8px;
+}
+
+.padding-box {
+    padding: 15px;
+}
+
+.padding-box h6 {
+    margin-top: 5px;
+}
+
+.padding-small {
+    padding: 8px;
+}
+
+.padding-box-middle {
+    padding: 15px;
+}
+
+
+/* separator */
+.separator {
+    height: 26px;
+}
+
+.separator-small {
+    height: 18px;
+}
+
+.separator-bottom {
+    height: 26px;
+}
+
+@-moz-document url-prefix() {
+    .separator-bottom {}
+
+}
+
+/* display */
+.display-block {
+    display: block;
+}
+
+/* nav botom list */
+ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 3px;
+
+}
+
+.icon {
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    position: absolute;
+    z-index: 1;
+    margin-top: 5%;
+    width: auto;
+}
+
+footer{
+    position:unset;
+}
+.card{
+    margin-top: 10%;
+}
+.warning{
+    color: red;
+}
+
+/* 
+fund transfer */
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+} 
+
+.transfer{
+    display :flex;
+    justify-content: center;
+    padding: 2%;
+    margin-top: 4%;
+}
+
+form {
+    justify-content: center;
+    border: 5px solid #f1f1f1;
+   width: 600Px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: grab;
+    width: 100px;
+    height: 40px;
+    
+}
+
+h1 {
+    text-align: center;
+    fone-size: 18;
+}
+.formcontainer {
+    text-align: center;
+    margin: 24px 50px 12px;
+}
+
+.container {
+    padding: 16px 0;
+    text-align: left;
+}
+
+span.psw {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+}
+footer{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 800px) {
+    span.psw {
+    
+        display: block;
+        float: none;
+    }
+    form{
+        width: 100%;
+        margin:1px;
+       
+    }
+    .transfer{
+        margin-top: 15%;
+    }
+    footer{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}

@@ -1,0 +1,42 @@
+.delete {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    margin-top: 4%;
+   
+
+}
+
+form {
+    justify-content: center;
+    border: 5px solid #f1f1f1;
+    width: 600Px;
+    background-color: #f5f4f4;
+}
+
+input[type=text],
+input[type=password] {
+    text-align: center;
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.formcontainer {
+    text-align: center;
+    margin: 24px 50px 12px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+}
+
+.warning {
+    color: red;
+}
+

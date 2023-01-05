@@ -1,0 +1,46 @@
+<div class="delete" *ngIf="dltAcno  ">
+    <form [formGroup]="deleteForm">
+        <div class="formcontainer">
+            <div class="container">
+                <label for="uname"><strong>Remove UBank Account</strong></label>
+                <br><br>
+                <label for="acno">Enter Your Account Number</label>
+                <input type="text" placeholder="Enter Account Number" formControlName="acno" name="acno" required>
+                <p class="warning" *ngIf="this.deleteForm.get('acno')?.errors && this.deleteForm.get('acno')?.touched">
+                    Invalid
+                    account number</p>
+                <label for="amount">Password</label>
+                <input type="password" placeholder="Enter Password" formControlName="pswd" name="pswd" required>
+                <p class="warning" *ngIf="this.deleteForm.get('pswd')?.errors && this.deleteForm.get('pswd')?.touched">
+                    Invalid
+                    password</p>
+            </div>
+            <!-- Button trigger for delete confirmation -->
+            <button type="button" class="btn btn-success m-2 " data-bs-dismiss="modal" (click)="cancel()">Return
+                Home</button> &ensp;
+            <button type="button" class="btn btn-danger m-2  " data-bs-toggle="modal" (click)="deleteConfirm()"
+                data-bs-target="#exampleModal">
+                Delete Account
+            </button>
+            <!--Delete  Confirmation  -->
+            <div class="modal fade" id={{target}} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Hi, {{username}}</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            Are you sure, Do you want to delete your account..?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                                (click)="cancel()">Cancel</button>
+                            <button type="submit" class="btn btn-danger" (click)="deleteAcno()">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
