@@ -12,7 +12,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 UBankServer
 
 ## Development server
-Run `nodemone index.js`
+Run `nodemon index.js`
 
 ## Code scaffolding
 
